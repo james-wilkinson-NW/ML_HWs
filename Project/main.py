@@ -16,7 +16,7 @@ optimizer = torch.optim.SGD(net.parameters(), lr=1e-3, momentum=0.9)
 
 losses = ff.trainNN(train,net,loss,optimizer,
                     max_epoch = 100000,
-                    loss_target = 0.74,
+                    loss_target = 0.76,
                     method = 'stochastic',
                     plot = True,
                     verbosity = True,
