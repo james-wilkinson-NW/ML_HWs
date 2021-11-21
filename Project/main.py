@@ -16,8 +16,10 @@ optimizer = torch.optim.SGD(net.parameters(), lr=1e-3, momentum=0.9)
 
 losses = ff.trainNN(train,net,loss,optimizer,
                     max_epoch = 100000,
-                    loss_target = 0.74,
+                    loss_target = 0.76,
                     method = 'stochastic',
                     plot = True,
                     verbosity = True,
                     _lambda = 0)
+
+### since we have a lot of features, some of which may not be relevant, want to try L1 regularization
