@@ -21,3 +21,5 @@ losses = ff.trainNN(train,net,loss,optimizer,
                     plot = True,
                     verbosity = True,
                     _lambda = 0)
+
+### since we have a lot of features, some of which may not be relevant, want to try L1 regularization
